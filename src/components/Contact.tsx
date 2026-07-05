@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from 'react'
-import { Mail, Linkedin, Github, MessageCircle } from 'lucide-react'
+import { Mail, Linkedin, Github, MessageCircle, Phone } from 'lucide-react'
 import { profile } from '../data/portfolio'
 
 export default function Contact() {
@@ -34,9 +34,9 @@ export default function Contact() {
                   <Linkedin size={18} /> {profile.socials.linkedin.replace('https://', '')}
                 </a>
               </li>
-              <li>
-                <a href={profile.socials.github} target="_blank" rel="noreferrer" className="flex items-center gap-3 text-slate hover:text-accent transition-colors">
-                  <Github size={18} /> {profile.socials.github.replace('https://', '')}
+                <li>
+                <a href={`tel:${profile.phone}`} className="flex items-center gap-3 text-slate hover:text-accent transition-colors">
+                  <Phone size={18} /> {profile.phone}
                 </a>
               </li>
               {profile.whatsapp && (
@@ -99,3 +99,5 @@ export default function Contact() {
     </section>
   )
 }
+
+
