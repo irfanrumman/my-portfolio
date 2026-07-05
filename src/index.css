@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Dark theme (default) ───────────────────────────────── */
+:root {
+  --color-ink: 10 10 15;        /* page background */
+  --color-panel: 19 19 27;      /* card / surface background */
+  --color-paper: 237 237 245;   /* primary text */
+  --color-slate: 156 163 175;   /* secondary / muted text */
+  --color-line: 255 255 255;    /* used with low alpha for borders */
+  --color-accent: 45 212 191;   /* cyan */
+  --color-accent2: 129 140 248; /* indigo */
+}
+
+/* ── Light theme (toggled via .light on <html>) ─────────── */
+.light {
+  --color-ink: 255 255 255;
+  --color-panel: 246 247 250;
+  --color-paper: 15 23 42;
+  --color-slate: 100 116 139;
+  --color-line: 15 23 42;
+  --color-accent: 13 148 136;
+  --color-accent2: 79 70 229;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(var(--color-ink));
+  color: rgb(var(--color-paper));
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+::selection {
+  background-color: rgb(var(--color-accent));
+  color: rgb(var(--color-ink));
+}
+
+.font-mono-label {
+  letter-spacing: 0.03em;
+}
+
+/* gradient text used for the animated hero heading */
+.gradient-text {
+  background: linear-gradient(90deg, rgb(var(--color-accent)), rgb(var(--color-accent2)));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+:focus-visible {
+  outline: 2px solid rgb(var(--color-accent));
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
