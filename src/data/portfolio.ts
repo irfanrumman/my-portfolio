@@ -63,11 +63,11 @@ export const profile = {
     github: 'https://github.com/irfanrumman/',
     linkedin: 'https://www.linkedin.com/in/mdirfanuddinrumman/',
   },
-  about: `My interest in web development started with a curiosity about how websites actually work behind the scenes. That curiosity gradually grew into a passion for building complete web applications, from creating responsive user interfaces to designing reliable backend systems and well-structured databases.
+  about: `I'm a Full-Stack Web Developer with a passion for building modern, scalable, and user-focused web applications. My journey into programming began with a curiosity about how websites work behind the scenes, and that curiosity has grown into a commitment to continuously learning, solving real-world problems, and creating meaningful digital experiences.
 
-Today, I primarily work with React, Next.js, Node.js, Express.js, PostgreSQL, MongoDB, and Prisma, always focusing on writing clean, maintainable code and following modern development practices. I enjoy solving real-world problems, designing efficient database structures, and continuously learning new technologies that help me become a better developer.
+I enjoy developing responsive user interfaces, building reliable backend systems, and designing well-structured databases. My primary expertise includes React, Next.js, Node.js, Express.js, PostgreSQL, MongoDB, and Prisma. I'm particularly interested in writing clean, maintainable code and applying sound software engineering principles to build applications that are both efficient and scalable.
 
-Alongside my academic studies at Al-Azhar University, I dedicate my time to building practical projects, improving my software engineering skills, and exploring scalable application architecture. Outside of coding, I enjoy reading, learning new technologies, and challenging myself with projects that strengthen both my technical knowledge and problem-solving abilities.`,
+Beyond coding, I believe in continuous growth through hands-on projects, exploring new technologies, and refining my problem-solving skills. Outside of programming, I enjoy reading, travelling, and discovering new ideas that inspire creativity, broaden my perspective, and support lifelong learning.`,
 }
 
 export const skills: SkillGroup[] = [
