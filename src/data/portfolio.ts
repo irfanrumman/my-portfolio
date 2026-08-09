@@ -2,7 +2,7 @@
 import myPic from "../images/mypic_1.jpg";
 import contactApp from "../images/contactapp.png"
 import thatix from "../images/tha_recipe.png"
-import foodies from "../images/foodies.png"
+import rentnest from "../images/rentnest.png"
 
 // ─────────────────────────────────────────────────────────────
 // THIS FILE to put in my informations.
@@ -110,16 +110,23 @@ export const education: EducationItem[] = [
 
 export const projects: Project[] = [
   {
-    slug: 'Contact App',
-    name: 'Contact App',
-     image: contactApp,
-    shortDescription:   'A responsive React application built with modern frontend technologies, focusing on clean UI, reusable components, and smooth user experience.',
-    description: `A frontend web application developed using React and Vite with a focus on component-based architecture and responsive design. The project demonstrates clean code organization, reusable UI components, modern styling practices, and an intuitive user experience across desktop and mobile devices.`,
-    techStack: ['React', 'Vite', 'React Router', 'JavaScript','Bootstrap',],
-    liveLink: 'https://contactapp-rumman.vercel.app/',
-    githubLink: 'https://github.com/irfanrumman/assignment5',
-    challenges:   'Managing component structure, implementing responsive layouts, handling client-side routing, and maintaining a clean and scalable codebase throughout the project.',
-    improvements: 'Further enhance accessibility, optimize performance, and add more interactive UI animations to improve the overall user experience.',
+    slug: 'RentNest',
+    name: 'RentNest',
+    image: rentnest,
+    shortDescription:   'A full-stack rental property marketplace connecting tenants and landlords, with role-based dashboards, secure payments, and a custom design system.',
+    description: `A production-grade rental marketplace built with Next.js and TypeScript, connecting tenants and landlords through role-based dashboards (Tenant/Landlord/Admin). Features include property listing and search with filters, a full rental request lifecycle (pending → approved → active → completed), secure Stripe payment integration, JWT-based authentication with httpOnly cookies, and a custom light/dark design system built on Tailwind and shadcn/ui.`,
+    techStack: ['Next.js',
+    'TypeScript',
+    'Tailwind CSS',
+    'shadcn/ui',
+    'Prisma',
+    'PostgreSQL',
+    'Stripe',
+    'JWT Auth',],
+    liveLink: 'https://l2-b7-assignment-5.vercel.app/',
+    githubLink: 'https://github.com/irfanrumman/L2B7-Assignment-5',
+    challenges:    'Implementing role-based route protection with middleware, handling the full rental request and payment lifecycle with React 19 useOptimistic, preventing double-fires in Stripe checkout under Strict Mode, and building a cohesive light/dark theme system from scratch.',
+    improvements:  'Add real-time notifications for rental request status changes, further optimize image loading and Core Web Vitals, and expand automated test coverage across the auth and payment flows.',
   },
   {
     slug: 'Thatix-Cookingrecipe',
@@ -134,15 +141,15 @@ export const projects: Project[] = [
     improvements: 'Introduce recipe search, category filtering, bookmarking favorite recipes, and additional UI enhancements to further improve the overall user experience.',
   },
   {
-    slug: 'foodies',
-    name: 'Foodies',
-    image: foodies,
-    shortDescription:  'A modern and responsive food website built with React, offering a clean interface and an enjoyable browsing experience.',
-    description: `Foodies is a responsive frontend web application developed with React and Tailwind CSS. The project focuses on creating a visually appealing and user-friendly interface where users can explore food items through a clean layout, reusable components, and responsive design. It demonstrates modern frontend development practices and an organized project structure.`,
-    techStack: [  'HTML5', 'CSS3', 'JavaScript'],
-    liveLink: 'https://irfanrumman.github.io/foodies/',
-    githubLink: 'https://github.com/irfanrumman/foodies',
-    challenges: 'Building a fully responsive interface while maintaining reusable components, clean code organization, and a consistent user experience across different screen sizes.',
-    improvements: 'Further improve accessibility, optimize performance, and refine the user interface following modern web development best practices.',
+   slug: 'Contact App',
+    name: 'Contact App',
+     image: contactApp,
+    shortDescription:   'A responsive React application built with modern frontend technologies, focusing on clean UI, reusable components, and smooth user experience.',
+    description: `A frontend web application developed using React and Vite with a focus on component-based architecture and responsive design. The project demonstrates clean code organization, reusable UI components, modern styling practices, and an intuitive user experience across desktop and mobile devices.`,
+    techStack: ['React', 'Vite', 'React Router', 'JavaScript','Bootstrap',],
+    liveLink: 'https://contactapp-rumman.vercel.app/',
+    githubLink: 'https://github.com/irfanrumman/assignment5',
+    challenges:   'Managing component structure, implementing responsive layouts, handling client-side routing, and maintaining a clean and scalable codebase throughout the project.',
+    improvements: 'Further enhance accessibility, optimize performance, and add more interactive UI animations to improve the overall user experience.',
   },
 ]
