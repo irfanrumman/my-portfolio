@@ -56,8 +56,11 @@ export const profile = {
   tagline: "Designing and developing modern web applications with clean code, scalable architecture, and great user experiences.",
   footer_tagline: "Building modern, scalable, and user-focused web applications with clean code.",
   photo: myPic,
+  // Full Stack
   // resumeUrl: 'https://drive.google.com/drive/folders/1zJAiWgMyun2GgLOhgN-2orauyLq4gdVy?usp=sharing', 
-  resumeUrl: 'https://drive.google.com/drive/folders/16AAeNrUUG5BVSSVU0bY1x6aHAai0STm1?usp=sharing', 
+
+  //backend
+  resumeUrl: 'https://drive.google.com/file/d/1MqGHDdkrZcmvOk0pKrV11gcK-vamGj6h/view?usp=sharing', 
   email: 'mdirfansayid@gmail.com',
   phone: '+8801628155339',
   whatsapp: '8801628155339',
