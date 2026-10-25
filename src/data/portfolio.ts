@@ -3,6 +3,7 @@ import myPic from "../images/mypic_1.jpg";
 import contactApp from "../images/contactapp.png"
 import thatix from "../images/tha_recipe.png"
 import rentnest from "../images/rentnest.png"
+import courierPro from "../images/courierPro.png"
 
 // ─────────────────────────────────────────────────────────────
 // THIS FILE to put in my informations.
@@ -127,6 +128,18 @@ export const projects: Project[] = [
     githubLink: 'https://github.com/irfanrumman/L2B7-Assignment-5',
     challenges:    'Implementing role-based route protection with middleware, handling the full rental request and payment lifecycle with React 19 useOptimistic, preventing double-fires in Stripe checkout under Strict Mode, and building a cohesive light/dark theme system from scratch.',
     improvements:  'Add real-time notifications for rental request status changes, further optimize image loading and Core Web Vitals, and expand automated test coverage across the auth and payment flows.',
+  },
+  {
+    slug: 'CourierPro-Logistics',
+    name: 'CourierPro Logistics',
+    image: courierPro,
+    shortDescription:   'A courier and logistics management platform where merchants and customers send parcels, and couriers and hubs move them from pickup to delivery.',
+    description: `A full-stack courier management platform with a Node.js backend and a Next.js frontend. Customers and merchants create shipments and pay online with bKash or Stripe, or use cash on delivery for the product price. Each shipment moves through three stages: pickup to the origin hub, transfer between hubs, and last mile delivery, with a separate courier assigned to each stage. The system has six roles (Super Admin, Admin, Customer, Merchant, Courier, and Hub Manager), and merchants must submit their documents and get verified before they can start.`,
+    techStack: ['Next.js', 'TypeScript', 'Node.js', 'Express.js', 'PostgreSQL', 'Prisma', 'JWT', 'Stripe', 'bKash'],
+    liveLink: 'https://courier-logistics-management-fronte-pi.vercel.app/',
+    githubLink: 'https://github.com/irfanrumman/Courier-Logistics-Management-Frontend',
+    challenges:  'Modelling the delivery flow so one shipment can have different couriers for pickup, hub transfer, and last mile delivery. Building a payment flow that supports retries with two gateways, and handling cash on delivery collection safely. The backend runs on Vercel serverless, so scheduled jobs had to be planned differently.',
+    improvements: 'Add live shipment tracking, email and SMS notifications for status changes, scheduled jobs through an external scheduler, and dashboards with delivery and revenue reports for admins and merchants.',
   },
   {
     slug: 'Thatix-Cookingrecipe',
