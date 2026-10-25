@@ -153,16 +153,5 @@ export const projects: Project[] = [
     challenges:  'Creating a fully responsive layout while maintaining a consistent user experience across different screen sizes and organizing the project with clean, maintainable code.',
     improvements: 'Introduce recipe search, category filtering, bookmarking favorite recipes, and additional UI enhancements to further improve the overall user experience.',
   },
-  {
-   slug: 'Contact App',
-    name: 'Contact App',
-     image: contactApp,
-    shortDescription:   'A responsive React application built with modern frontend technologies, focusing on clean UI, reusable components, and smooth user experience.',
-    description: `A frontend web application developed using React and Vite with a focus on component-based architecture and responsive design. The project demonstrates clean code organization, reusable UI components, modern styling practices, and an intuitive user experience across desktop and mobile devices.`,
-    techStack: ['React', 'Vite', 'React Router', 'JavaScript','Bootstrap',],
-    liveLink: 'https://contactapp-rumman.vercel.app/',
-    githubLink: 'https://github.com/irfanrumman/assignment5',
-    challenges:   'Managing component structure, implementing responsive layouts, handling client-side routing, and maintaining a clean and scalable codebase throughout the project.',
-    improvements: 'Further enhance accessibility, optimize performance, and add more interactive UI animations to improve the overall user experience.',
-  },
+  
 ]
